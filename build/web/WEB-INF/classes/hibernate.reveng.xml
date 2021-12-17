@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="tuk"/>
+  <table-filter match-name="bloodgroup"/>
+  <table-filter match-name="vehicle"/>
+  <table-filter match-name="driver"/>
+  <table-filter match-name="feetype"/>
+  <table-filter match-name="driver_has_vehicledetails"/>
+  <table-filter match-name="tripdetails"/>
+  <table-filter match-name="vehicledetails"/>
+</hibernate-reverse-engineering>

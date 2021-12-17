@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2018 12:49:42 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="pojos.Tripdetails" table="tripdetails" catalog="tuk">
+        <id name="idtripdetails" type="java.lang.Integer">
+            <column name="idtripdetails" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="driverHasVehicledetails" class="pojos.DriverHasVehicledetails" fetch="select">
+            <column name="driver_has_vehicledetails_driver_has_vehicledetailsid" not-null="true" />
+        </many-to-one>
+        <property name="starttime" type="time">
+            <column name="starttime" length="8" />
+        </property>
+        <property name="endtime" type="time">
+            <column name="endtime" length="8" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="10" />
+        </property>
+        <property name="avgspeed" type="java.lang.Double">
+            <column name="avgspeed" precision="22" scale="0" />
+        </property>
+        <property name="hiretime" type="time">
+            <column name="hiretime" length="8" />
+        </property>
+        <property name="waitingtime" type="time">
+            <column name="waitingtime" length="8" />
+        </property>
+        <property name="totalkm" type="java.lang.Double">
+            <column name="totalkm" precision="22" scale="0" />
+        </property>
+        <property name="totalprice" type="java.lang.Double">
+            <column name="totalprice" precision="22" scale="0" />
+        </property>
+        <property name="totaltime" type="java.lang.Double">
+            <column name="totaltime" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
